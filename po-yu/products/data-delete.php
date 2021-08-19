@@ -6,7 +6,7 @@ include __DIR__ . '/partials/init.php';
 $sid = isset($_GET['sid']) ? intval($_GET['sid']) : 0;
 // empty — 檢查一個變量是否為空
 if (!empty($sid)) {
-    $sql = "DELETE FROM `product` WHERE sid=$sid";
+    $sql = "DELETE FROM `products` WHERE sid=$sid";
     $stmt = $pdo->query($sql);
 }
 

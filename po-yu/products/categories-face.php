@@ -2,11 +2,11 @@
 include __DIR__ . "./partials/database.php";
 
 // 取得資料筆數
-// $totalRows = $pdo->query("SELECT count(1) FROM product WHERE `categories_sid` = 1 ORDER BY `sid` ASC;")
+// $totalRows = $pdo->query("SELECT count(1) FROM products WHERE `categories_sid` = 1 ORDER BY `sid` ASC;")
 //     ->fetch(PDO::FETCH_NUM)[0];
 
 // // 查詢所有商品類別為1數據的sql語句
-// $sql = "SELECT *  FROM `product` WHERE `categories_sid` = 1 ORDER BY `sid` ASC;";
+// $sql = "SELECT *  FROM `products` WHERE `categories_sid` = 1 ORDER BY `sid` ASC;";
 
 
 // $rows = $pdo->query($sql)->fetchAll();
@@ -20,7 +20,7 @@ $perPage = 10;
 $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
 
 // 總共有幾筆 (主要修改位置)
-$totalRows = $pdo->query("SELECT count(1) FROM product WHERE `Location` = '臉部' ORDER BY `sid` ASC;")
+$totalRows = $pdo->query("SELECT count(1) FROM products WHERE `Location` = '臉部' ORDER BY `sid` ASC;")
     ->fetch(PDO::FETCH_NUM)[0];
 
 // 總共有幾頁, 才能生出分頁按鈕
@@ -38,7 +38,7 @@ if ($page > $totalPages) {
 
 // LIMIT後面如果有兩個數，第一個是開始的數(索引號從0開始)，第二個是展示的數量 (主要修改位置)
 $sql = sprintf(
-    "SELECT * FROM `product`  WHERE `Location` = '臉部' ORDER BY `sid` DESC LIMIT %s, %s",
+    "SELECT * FROM `products`  WHERE `Location` = '臉部' ORDER BY `sid` DESC LIMIT %s, %s",
     ($page - 1) * $perPage,
     $perPage
 );

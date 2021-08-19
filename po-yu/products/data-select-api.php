@@ -48,22 +48,22 @@ $N = $_POST["N"];
 
 <?php
 // 查詢所有數據的sql語句
-// $sql = "SELECT * FROM `product` WHERE 
+// $sql = "SELECT * FROM `products` WHERE 
 //      `sid` LIKE '%$i%' AND `Name` LIKE '%$N%' AND `categories_sid` LIKE '%$cs%' AND `Location` LIKE '%$L%' AND `nutrient` LIKE '%$n%' AND `company` LIKE '%$c%' AND `quantity` LIKE '%$q%' AND `price` LIKE '%$p%' AND `Edible_Method` LIKE '%$EM%' AND `place_origin` LIKE '%$po%' AND `EXP` LIKE '%$EXP%'";
 
 // 暫時先刪除掉sid和price 
-// $sql = "SELECT * FROM `product` WHERE 
+// $sql = "SELECT * FROM `products` WHERE 
 //      `Name` LIKE '%$N%' AND `categories_sid` LIKE '%$cs%' AND `Location` LIKE '%$L%' AND `nutrient` LIKE '%$n%' AND `brand_company` LIKE '%$c%' AND `quantity` LIKE '%$q%' AND `Edible_Method` LIKE '%$EM%' AND `place_origin` LIKE '%$po%' AND `EXP` LIKE '%$EXP%'";
-$sql = "SELECT * FROM `product` WHERE 
+$sql = "SELECT * FROM `products` WHERE 
      `Name` LIKE '%$N%'";
 
 
 
 // 取得資料筆數
-// $totalRows = $pdo->query("SELECT count(1) FROM product WHERE 
+// $totalRows = $pdo->query("SELECT count(1) FROM products WHERE 
 //      `Name` LIKE '%$N%' AND `categories_sid` LIKE '%$cs%' AND `Location` LIKE '%$L%' AND `nutrient` LIKE '%$n%' AND `brand_company` LIKE '%$c%' AND `quantity` LIKE '%$q%' AND `Edible_Method` LIKE '%$EM%' AND `place_origin` LIKE '%$po%' AND `EXP` LIKE '%$EXP%'")
 //     ->fetch(PDO::FETCH_NUM)[0];
-$totalRows = $pdo->query("SELECT count(1) FROM product WHERE 
+$totalRows = $pdo->query("SELECT count(1) FROM products WHERE 
      `Name` LIKE '%$N%'")
     ->fetch(PDO::FETCH_NUM)[0];
 

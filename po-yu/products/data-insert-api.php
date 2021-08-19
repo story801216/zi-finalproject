@@ -119,9 +119,9 @@ if (
 // 插入語句
 // 前面是``  後面是''
 
-// $sql = "INSERT INTO `product` (`sid`, `Name`, `categories_sid`,`image`, `Location`, `nutrient`, `company`, `quantity`, `price`, `Edible_Method`, `place_origin`, `EXP`, `MFD`) VALUES (NULL, '$N', '$cs','$img', '$L', '$n', '$c', '$q', '$p', '$EM', '$po', '$EXP', '$MFD');";
+// $sql = "INSERT INTO `products` (`sid`, `Name`, `categories_sid`,`image`, `Location`, `nutrient`, `company`, `quantity`, `price`, `Edible_Method`, `place_origin`, `EXP`, `MFD`) VALUES (NULL, '$N', '$cs','$img', '$L', '$n', '$c', '$q', '$p', '$EM', '$po', '$EXP', '$MFD');";
 
-$sql = "INSERT INTO `product`(
+$sql = "INSERT INTO `products`(
                `Name`, `categories_sid`, `image`,
                `Location`, `nutrient`, `brand_company`, `quantity`, `price`, `special offer`, `Edible_Method`, `place_origin`, `EXP`, `MFD`, `create_at`
                ) VALUES (

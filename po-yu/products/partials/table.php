@@ -16,6 +16,9 @@
 <table class="table" cellspacing="0" width="800px">
     <thead class="thead-dark">
         <tr>
+            <th scope="col">
+                <i class="fas fa-cart-plus"></i>
+            </th>
             <th>sid<br>(商品編號)</th>
             <th>Name<br>(商品名稱)</th>
             <th>categories_sid<br>(商品類別編號)</th>
@@ -38,6 +41,11 @@
 
         <?php foreach ($rows as $r) : ?>
             <tr>
+                <td>
+                    <a href="addcart.php?sid=<?= $r['sid'] ?>">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                </td>
                 <td><?php echo $r["sid"]; ?> </td>
                 <td><?php echo $r["Name"]; ?> </td>
                 <td><?php echo $r["categories_sid"]; ?> </td>
@@ -47,7 +55,7 @@
                 <td><?php echo $r["brand_company"]; ?></td>
                 <td><?php echo $r["quantity"]; ?></td>
                 <td><?php echo '$' . $r["price"]; ?></td>
-                <td class="special-offer"><?php echo  $r["special offer"]; ?></td>
+                <td class="special-offer"><?php echo  $r["special_offer"]; ?></td>
                 <td><?php echo $r["Edible_Method"]; ?></td>
                 <td><?php echo $r["place_origin"]; ?></td>
                 <td><?php echo $r["EXP"]; ?></td>

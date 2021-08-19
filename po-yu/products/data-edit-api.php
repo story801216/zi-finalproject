@@ -38,7 +38,7 @@ if (
 
 // '\[value-\d\]' 一次查詢全部[value]
 
-$sql = "UPDATE `product` SET 
+$sql = "UPDATE `products` SET 
                     `Name`=?,
                     `categories_sid`=?,
                     `image`=?,

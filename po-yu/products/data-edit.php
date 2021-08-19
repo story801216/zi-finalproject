@@ -5,7 +5,7 @@ $sid = isset($_GET['sid']) ? intval($_GET['sid']) : 0;
 
 
 // 根據sid查到當前商品是哪一個
-$sql = "SELECT * FROM `product` WHERE `sid` = $sid";
+$sql = "SELECT * FROM `products` WHERE `sid` = $sid";
 
 
 $r = $pdo->query($sql)->fetch();
