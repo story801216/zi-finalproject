@@ -27,11 +27,9 @@
             <ul class="navbar-nav">
                 <?php if(isset($_SESSION['user'])): ?>
                     <li class="nav-item active">
-                         <a class="nav-link" ><?= $_SESSION['user']['name'] ?></a> <!--把href拿掉的用意在於登入後['nickname']就沒有可點入的部分 -->
+                         <a class="nav-link" href="profile-edit.php" ><?= $_SESSION['user']['name']  ?></a> 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile-edit.php">編輯個人資料</a> 
-                    </li> 
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">登出</a>
                     </li>
