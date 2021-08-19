@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="data-list.php">資料列表</a>
+                    <a class="nav-link" href="data-list.php">會員資料列表</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="../../../finalproject/po-yu/products/data-list.php">商品</a>

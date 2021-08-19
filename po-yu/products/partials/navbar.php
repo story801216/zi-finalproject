@@ -15,7 +15,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../../../finalproject/zi-ting/data-list.php">資料列表</a>
+                    <a class="nav-link" href="../../../finalproject/zi-ting/data-list.php">會員資料列表</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../../../finalproject/yi-ling/porj-crud/data-list.php">門市資訊</a>
@@ -34,11 +34,11 @@
                     <a class="nav-link"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">登入</a>
+                    <a class="nav-link" href="logout.php">登出</a>
                 </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="login.php">登出</a>
+                    <a class="nav-link" href="login.php">登入</a>
                 </li>
                 <li class="nav-item active cart-icon">
                         <a class="nav-link" href="cart-check.php" >
