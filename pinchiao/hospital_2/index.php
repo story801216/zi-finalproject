@@ -89,6 +89,28 @@ $rows = $pdo->query($sql)->fetchAll();
         background-color: #4169E1;
         color: white;
     }
+    
+    .add{
+        border:1px solid #4d4d4d;
+        border-radius:5px;
+        width:100px;
+        height: 50px;
+        background-color: #4169E1;
+        
+    }
+
+    .add>a{
+        color:white;
+        margin-top: 3px;
+    }
+
+    .add:hover{
+        background-color:#3CB371;
+    }
+
+
+    
+    
 
 </style>
 
@@ -121,10 +143,21 @@ $rows = $pdo->query($sql)->fetchAll();
         
     </div>
 
-<div class="container">
+
+
+
+<div class="container-fluid">
     <div class="row">
-        <div class="col">
+            <div class="col d-flex justify-content-between">
+
+
+            <div class="add">
+                <a class="nav-link" href="add.html">新增資料</a>
+            </div>
+
+
             <nav aria-label="Page navigation example">
+
                 <ul class="pagination d-flex justify-content-end">
 
                     <li class="page-item <?= $page<=1 ? 'disabled' : '' ?>">
@@ -159,9 +192,6 @@ $rows = $pdo->query($sql)->fetchAll();
     
         </div>
     </div>
-
-
-
 
 
 
