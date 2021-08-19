@@ -7,6 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="bootstrap4/css/bootstrap.css">
-    <title><?= isset($title) ? $title. ' - '  : '' ?>我的網站</title>
+    <title><?= isset($title) ? $title. ' - '  : '' ?></title>
 </head>
 <body>
