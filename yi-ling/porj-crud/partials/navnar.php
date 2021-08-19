@@ -1,4 +1,10 @@
-
+<style>
+    .cart-icon{
+        padding-top: 6px;
+    }
+</style>
+    
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="../../../finalproject/zi-ting/index_.php">首頁</a>
@@ -44,7 +50,7 @@
                     </li>
                 <?php endif; ?>
                 <li class="nav-item active cart-icon">
-                        <a class="nav-link" href="cart-check.php" >
+                        <a class="nav-link" href="../../../finalproject/po-yu/products/cart-check.php" >
                             <i class="fas fa-shopping-cart"><?= isset($_SESSION['total']) ? $_SESSION['total']: ''; ?></i>
                         </a>
                 </li>
