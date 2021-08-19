@@ -97,9 +97,7 @@ $rows = $pdo->query($sql)->fetchAll();
 </head>
 <body>
 
-<?php
-require_once "navbar.php"
-?>
+<?php include __DIR__. '/partials/navbar.php'; ?>
     <div class="info text-center">
         <!-- <h1>醫院資訊</h1> -->
         <img src="./banner-bg-hospital.jpg" class="img-fluid" alt="...">

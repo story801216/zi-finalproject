@@ -1,19 +1,12 @@
-<style>
-    .cart-icon{
-        padding-top: 6px;
-    }
-</style>
-    
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="../../../finalproject/zi-ting/index_.php">首頁</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="index_.php">首頁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="data-list.php">會員資料列表</a>
@@ -30,10 +23,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">查看訂單</a>
                 </li>
-                    
-                </ul>
-    
-                <ul class="navbar-nav">
+
+
+            </ul>
+
+            <ul class="navbar-nav">
             <?php if(isset($_SESSION['user'])): ?>
                     <li class="nav-item active">
                          <a class="nav-link" href="../../../finalproject/zi-ting/profile-edit.php" ><?= $_SESSION['user']['name']  ?></a> 
@@ -55,8 +49,7 @@
                         </a>
                 </li>
             </ul>
-    
-            </div>
-        </div>
-    </nav>
 
+        </div>
+    </div>
+</nav>
