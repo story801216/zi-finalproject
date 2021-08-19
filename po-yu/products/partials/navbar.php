@@ -15,16 +15,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link" href="../../../finalproject/zi-ting/data-list.php">資料列表</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./data-list.php">門市資訊</a>
+                    <a class="nav-link" href="../../../finalproject/yi-ling/porj-crud/data-list.php">門市資訊</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">醫院</a>
+                    <a class="nav-link" href="../../../finalproject/pinchiao/hospital_2/">找醫院</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">商品</a>
+                    <a class="nav-link" href="data-list.php">商品</a>
                 </li>
 
             </ul>
