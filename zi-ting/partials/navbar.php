@@ -30,7 +30,7 @@
                          <a class="nav-link" ><?= $_SESSION['user']['name'] ?></a> <!--把href拿掉的用意在於登入後['nickname']就沒有可點入的部分 -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profile-edit.php">編輯個人資料</a> <!--編輯個人資料按鈕製作20210812090115-09:20~ -->
+                        <a class="nav-link" href="profile-edit.php">編輯個人資料</a> 
                     </li> 
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">登出</a>
@@ -42,6 +42,12 @@
                     <li class="nav-item">
                     <a class="nav-link" href="data-insert.php">註冊</a>
                     </li>
+
+                    <li class="nav-item active cart-icon">
+                        <a class="nav-link" href="../../../finalproject/po-yu/products/cart-check.php" >
+                            <i class="fas fa-shopping-cart"><?= isset($_SESSION['total']) ? $_SESSION['total']: ''; ?></i>
+                        </a>
+                </li>
                 <?php endif; ?>
             </ul>
 
