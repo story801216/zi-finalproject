@@ -33,13 +33,15 @@
                 <li class="nav-item active">
                     <a class="nav-link"></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../../finalproject/zi-ting/login.php">登入</a>
+                </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">登出</a>
+                    <a class="nav-link" href="../../../finalproject/zi-ting/logout.php">登出</a>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="nav-link" href="login.php">登入</a>
-                </li>
+
                 <li class="nav-item active cart-icon">
                         <a class="nav-link" href="cart-check.php" >
                             <i class="fas fa-shopping-cart"><?= isset($_SESSION['total']) ? $_SESSION['total']: ''; ?></i>
