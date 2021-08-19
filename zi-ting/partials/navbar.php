@@ -43,12 +43,12 @@
                     <a class="nav-link" href="data-insert.php">註冊</a>
                     </li>
 
-                    <li class="nav-item active cart-icon">
+                <?php endif; ?>
+                <li class="nav-item active cart-icon">
                         <a class="nav-link" href="../../../finalproject/po-yu/products/cart-check.php" >
                             <i class="fas fa-shopping-cart"><?= isset($_SESSION['total']) ? $_SESSION['total']: ''; ?></i>
                         </a>
                 </li>
-                <?php endif; ?>
             </ul>
 
         </div>
