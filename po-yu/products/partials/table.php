@@ -40,7 +40,8 @@
     <tbody>
 
         <?php foreach ($rows as $r) : ?>
-            <tr>
+            <tr>              
+                <!-- 加入購物車的按鈕 -->
                 <td>
                     <a href="addcart.php?sid=<?= $r['sid'] ?>">
                         <i class="fas fa-cart-plus"></i>
@@ -55,7 +56,7 @@
                 <td><?php echo $r["brand_company"]; ?></td>
                 <td><?php echo $r["quantity"]; ?></td>
                 <td><?php echo '$' . $r["price"]; ?></td>
-                <td class="special-offer"><?php echo  $r["special_offer"]=='暫無'?'暫無':'$'.$r["special_offer"]; ?></td>
+                <td class="special-offer"><?php echo  $r["special_offer"]; ?></td>
                 <td><?php echo $r["Edible_Method"]; ?></td>
                 <td><?php echo $r["place_origin"]; ?></td>
                 <td><?php echo $r["EXP"]; ?></td>
@@ -73,3 +74,4 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+

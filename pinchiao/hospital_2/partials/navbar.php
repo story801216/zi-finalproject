@@ -26,7 +26,7 @@ session_start();
                     <a class="nav-link" href="../../../finalproject/yi-ling/porj-crud/data-list.php">門市資訊</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">查看訂單</a>
+                    <a class="nav-link" href="../../../finalproject/po-yu/products/order-list.php">查看訂單</a>
                 </li>
 
 
