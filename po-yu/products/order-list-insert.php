@@ -24,12 +24,11 @@ $sql = "INSERT INTO `order_list`(
         )";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
-    // $_SESSION['user']['sid'],   // 麻煩梓庭串接會員api      
-    '1',
+    $_SESSION['user']['sid'],   // 麻煩梓庭串接會員api      
     $_POST['total'],
     $_POST['payment'],
     $_POST['delivery'],
-    $_POST['addressee_name'],
+    $_POST['name'],
     $_POST['mobile'],
     $_POST['address'],
     '未處理',       //預設為未處理
