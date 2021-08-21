@@ -17,10 +17,10 @@
 // 計算總金額 total
 $total = 0;
 foreach ($_SESSION['shoplist'] as $s) {
-    if ($s['special_offer'] == '暫無') {
+    if ($s['special offer'] == '暫無') {
         $total += $s['price'] * $s['num'];
     } else {
-        $total += $s['special_offer'] * $s['num'];
+        $total += $s['special offer'] * $s['num'];
     }
 }
 ?>
@@ -48,7 +48,7 @@ foreach ($_SESSION['shoplist'] as $s) {
             </thead>
             <tbody>
                 <?php foreach ($_SESSION['shoplist'] as $s) : ?>
-                    <?php $p = $s['special_offer'] == '暫無' ? $s['price'] : $s['special_offer'] ?>
+                    <?php $p = $s['special offer'] == '暫無' ? $s['price'] : $s['special offer'] ?>
                     <tr>
                         <td> <?= $s['sid'] ?> </td>
                         <td> <img src="<?= $s['image'] ?> " alt=""></td>
@@ -89,7 +89,7 @@ foreach ($_SESSION['shoplist'] as $s) {
                 <div class="form-group">
                     <label for="delivery">送貨方式</label>
                     <select class="form-control" aria-label="Default select example" id="delivery" name="delivery">
-                        <option selected value="自取">自取</option>
+                        <option value="自取">自取</option>
                         <option value="宅配">宅配</option>
                     </select>
                 </div>
@@ -159,7 +159,7 @@ foreach ($_SESSION['shoplist'] as $s) {
                             console.log(obj);
                             if (obj.success) {
                                 alert('訂單成功送出')
-                                window.location = "order-detail-insert.php";
+                                window.location = "./order-detail-insert.php";
                             } else {
                                 alert(obj.error);
                             }
