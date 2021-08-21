@@ -18,7 +18,7 @@ $sql = "INSERT INTO `order_details`(
 
 $stmt = $pdo->prepare($sql);
 foreach($_SESSION['shoplist'] as $s){
-$p = $s['special_offer'] == '暫無' ? $s['price'] : $s['special_offer'];
+$p = $s['special offer'] == '暫無' ? $s['price'] : $s['special offer'];
     $stmt->execute([
         $row['sid'],
         $s['sid'],

@@ -28,7 +28,7 @@ $stmt->execute([
     $_POST['total'],
     $_POST['payment'],
     $_POST['delivery'],
-    $_POST['name'],
+    $_POST['addressee_name'],
     $_POST['mobile'],
     $_POST['address'],
     '未處理',       //預設為未處理
